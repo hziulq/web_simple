@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <base href="/web_sipmle/"> -->
-    <title>Document</title>
+    <title>jQuery To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a sample HTML file.</p>
-    <p>testing base tag link. as</p>
-    <a href="./introduce.html">About Us</a>
+    <div id="app">
+        <h1>シンプルなTo-Doリスト</h1>
+
+        <div id="input-area">
+            <input type="text" id="new-task" placeholder="新しいタスクを入力...">
+            <button id="add-button">追加</button>
+        </div>
+
+        <ul id="todo-list">
+        </ul>
+    </div>
 </body>
+
 </html>
